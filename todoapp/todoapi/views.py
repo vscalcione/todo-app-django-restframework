@@ -1,8 +1,8 @@
 from rest_framework import viewsets
 
-from .serializers import HeroSerializer
-from .models import Hero
+from .serializers import TodoSerializer
+from .models import Todo
 
-class HeroViewSet(viewsets.ModelViewSet):
-    queryset = Hero.objects.all().order_by('name')
-    serializer_class = HeroSerializer
+class TodoViewSet(viewsets.ModelViewSet):
+    queryset = Todo.objects.all().order_by('name')
+    serializer_class = TodoSerializer

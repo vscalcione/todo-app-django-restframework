@@ -3,7 +3,7 @@ from rest_framework import routers
 from . import views
 
 router = routers.DefaultRouter()
-router.register(r'heroes', views.HeroViewSet)
+router.register(r'todos', views.TodoViewSet)
 
 # Wire up our API using automatic URL routing
 # Additionally, we include login URLS for the browsable API
